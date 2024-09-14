@@ -1,0 +1,174 @@
+body {
+    margin: 0;
+    padding: 0;
+
+}
+
+header {
+    background-color: rgb(17, 138, 203);
+    padding: 1em 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3em;
+    margin: 0;
+    color: white;
+}
+
+h3 {
+    width: fit-content;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    border-bottom: solid 2px black;
+}
+
+/* section 1 placeholder color */
+
+#placeholder-color {
+    background-color: rgb(244, 244, 244);
+    padding: 1em 1.5em;
+}
+
+dt {
+    font-weight: bold;
+}
+
+.changeplaceholdercode pre {
+    background-color: #76D7C4;
+    width: fit-content;
+    padding: .5em;
+    border: solid 1px #2E86C1;
+}
+
+.placeholder-syntax {
+    display: flex;
+    justify-content: space-around;
+}
+
+.placeholder-syntax>div {
+    width: 30%;
+    background-color: #CCCCFF;
+    padding: 0 .5em;
+    border: solid 1px #9B59B6;
+    border-radius: 20px;
+}
+
+#dropdown {
+    padding: 1em 1.5em;
+    background-color: white;
+}
+
+/* #dropdown strong{
+
+} */
+.dropdown-img {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dropdown-img div {
+    margin-bottom: 1em;
+}
+
+.first {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.first-content {
+    width: 50%;
+    border: 2px solid rgb(128, 139, 150);
+    padding: 1em;
+}
+
+.dropdown-img pre {
+    color: white;
+    border: 1px solid white;
+    background-color: rgb(52, 152, 219);
+    width: fit-content;
+    padding: 1em;
+    border-radius: 20px;
+}
+
+.second {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+.second-content {
+    width: 50%;
+    border: 2px solid rgb(128, 139, 150);
+    padding: 1em;
+}
+
+@media only screen and (max-width:500px) {
+    .placeholder-img-box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .placeholder-img {
+        width: 90%;
+        height: auto;
+
+    }
+
+    .placeholder-syntax {
+        height: 75vh;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .placeholder-syntax>div {
+        width: 90%;
+        align-items: center;
+    }
+
+    .first,
+    .second {
+        flex-direction: column-reverse;
+    }
+
+    .first-content,
+    .second-content {
+        width: 90%;
+    }
+
+    .first-content,
+    .second-content div {
+        margin-bottom: 1.5em;
+    }
+}
+@media only screen and (max-width:350px){
+    h1{
+        font-size: 2.5em;
+    }
+    .dropdown-img{
+        display: flex;
+        align-items: center;
+    }
+    .first-content pre,.second-content pre{
+        width:90%;
+    }
+    .dropdown-hover{
+        position:relative;
+        left: -1.1em;
+    
+    }
+    .dropdown-img img{
+        width:80%;
+        height:auto;
+    }
+}

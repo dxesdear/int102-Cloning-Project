@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="pic/iconprofile.png" size="32x32">
+  <title>Description</title>
+  <link rel="stylesheet" href="stylefile/descriptionstyle.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><h1>description</h1></a>
+  </header>
+  <section id="placeholder-color">
+    <h3>page 1 ( homepage )</h3>
+      <h4>1.การเปลี่ยนสีข้อความใน tag input (placeholder)</h4>
+    <div class="changeplaceholdercode">
+      <pre>::placeholder {
+      color: rgb(161, 209, 234);
+   }</pre>
+    </div>
+    <div class="placeholder-img-box">
+      <img class="placeholder-img" src="description-pic/placeholder-img.png" alt="placeholder color" width="500px"
+        height="100px">
+    </div>
+    <p>โดยการแสดงของคำสั่งเปลี่ยนสีข้อความ placeholder นั้นจะแตกต่างกันไปในแต่ละเบราว์เซอร์</p>
+    <div class="placeholder-syntax">
+      <div class="mozilla-firefox">
+        <p>คำสั่งการเปลี่ยนสีข้อความ placeholder ใน Mozilla หรือ Firefox</p>
+        <pre>::-moz-placeholder {
+    color:    rgb(161, 209, 234);
+    opacity:  1;
+ }
+  </pre>
+      </div>
+      <div class="Microsoft-Edge">
+        <p>คำสั่งการเปลี่ยนสีข้อความ placeholder ใน Microsoft Edge</p>
+        <pre>
+::-ms-input-placeholder {
+   color:    rgb(161, 209, 234);
+}
+</pre>
+      </div>
+      <div class="mostuse">
+        <p>คำสั่งการเปลี่ยนสีข้อความ placeholder ที่มักใช้และเว็บเบราว์เซอร์ทั่วไปรองรับ</p>
+        <pre>
+::placeholder {
+   color:    rgb(161, 209, 234);
+}
+</pre>
+      </div>
+    </div>
+  </section>
+  <section id="dropdown">   
+      <h4>2.การทำ Dropdown</h4>
+    <div class="dropdown-img">
+      <div class="first">
+        <img src="description-pic/dropdown1.png" alt="dropdown-img" width="300px " height="auto">
+          <div class="first-content">
+        <pre>
+< div class="dropdown" >
+    < button class="dropbtn" >
+        ...
+    < /button >
+  < div class="dropdown-content" >
+    < a href=""></a>
+    < a href=""></a>
+    < a href=""></a>
+  < /div >
+< /div >
+        </pre>
+            <p>ใน div dropdown จะประกอบด้วย 2 ส่วนคือส่วนของ button และส่วนของ div (dropdown-content class) ที่คลุม tag a เอาไว้เริ่มต้นส่วนของ dropdown-content class จะถูกตั้งค่า hidden ไว้ด้วยคำสั่ง CSS 
+              <pre>.dropdown-content {
+    display:none;
+}</pre>
+            </p>
+          </div>
+      </div>
+      <div class="second">
+        <img src="description-pic/dropdown2.png" alt="dropdown-img2" width="300px" height="auto">
+        <div class="second-content">
+          <p>จากนั้นเมื่อต้องการให้ส่วน dropdown-content แสดง ให้ตั้งค่า hover ของ button ใน css 
+            <pre  class="dropdown-hover"style="width:fit-content">.dropdown:hover .dropdown-content {
+        display: block;
+}</pre>
+          โดยการแสดงของ dropdown-content นั้นค่าเริ่มต้นจะแสดงเลเยอร์เดียวกับเนื้อหาอื่น ๆ ทำให้เกิดการดันเนื้อหาอื่น ๆ ดังนั้นจึงต้องตั้งค่า z-index เพื่อให้ dropdown-content ลอยจากส่วนอื่น ๆ นอกจากนั้นยังต้องมีการกำหนด position เพื่อทำให้ dropdown-content แสดงในตำแหน่งที่ต้องการ
+          <pre>
+   .dropdown-content {      
+      position: absolute;             
+      z-index: 1;
+      right:.5em;
+    }
+          </pre>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

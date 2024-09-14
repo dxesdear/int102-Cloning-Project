@@ -1,0 +1,812 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* header */
+
+
+header {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+header .above {
+    background-color: rgb(17, 138, 203);
+    text-align: center;
+    width: 100%;
+}
+
+.above p {
+    padding: 0.6em;
+    color: white;
+    font-size: smaller;
+    font-weight: bold;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1em;
+
+}
+
+.shopname a {
+    text-decoration: none;
+}
+
+.shopname h1 {
+    margin: 0;
+    color: rgb(0, 145, 208);
+    font-weight: 900;
+    font-size: 2.8em;
+
+}
+
+.navbar {
+    width: 60%;
+    margin-left: -3em;
+
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 26px;
+}
+
+.navbar ul li {
+    list-style-type: none;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: .8em;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar a:hover {
+    color: rgb(17, 138, 203);
+}
+
+/* only in wholesale page */
+.wholesale {
+    padding-bottom: .5em;
+    border-bottom: 2px solid rgb(17, 138, 203);
+}
+
+.wholesale a:hover {
+    color: black;
+}
+
+/* only in wholesale page */
+
+.icon {
+    width: 20%;
+    margin: -0.5em;
+    padding-top: 0.5em;
+}
+
+.icon ul {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    margin-top: 26px;
+}
+
+.icon ul li {
+    list-style-type: none;
+}
+
+.icon a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    font-size: 1.2em;
+}
+
+.icon a i {
+    font-size: larger;
+}
+
+.searchicon {
+    display: flex;
+}
+
+.searchicon li {
+    padding: 0 .3em;
+}
+
+.orderonline {
+    text-transform: uppercase;
+    font-size: smaller;
+
+}
+
+.orderonline a {
+    color: white;
+    border: solid 1px rgb(17, 138, 203);
+    background-color: rgb(17, 138, 203);
+    padding: 0.5em;
+}
+
+.orderonline a:hover {
+    background-color: white;
+    color: rgb(0, 145, 208);
+    border: solid 1px rgb(17, 138, 203);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: none;
+}
+
+/* Style The Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    z-index: 1;
+    right: .5em;
+    padding-bottom: 1em;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: small;
+
+}
+
+.dropdown-content a:hover {
+    color: rgb(17, 138, 203);
+}
+
+.dropbtn i {
+    color: black;
+    font-size: 1.5em;
+}
+
+.dropdown-content .orderonline {
+    color: white;
+    border: solid 1px rgb(17, 138, 203);
+    background-color: rgb(17, 138, 203);
+    padding: 0.5em;
+    font-size: 1em;
+    width: 80%;
+    margin-left: .5em;
+
+}
+
+.dropdown-content .orderonline:hover {
+    background-color: white;
+    color: rgb(0, 145, 208);
+    border: solid 1px rgb(17, 138, 203);
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: white
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: white;
+}
+
+.mainpic {
+    background-image: url(../pic/Wholesale-Banner-2500x998.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 95vh;
+    background-position: 0 -4em;
+    margin-top: -.3em;
+}
+
+.mainpic .overlay {
+    width: 30%;
+    height: 100%;
+    padding-left: 2em;
+    display: flex;
+    align-items: flex-end;
+}
+
+.overlay h1 {
+    margin: 0 0 2em 0;
+    font-size: 3.5em;
+    color: white;
+    font-weight: 800;
+}
+
+
+/* section 1 */
+
+
+.ourspeech {
+    width: 60%;
+    margin: auto;
+    padding-top: 2em;
+    padding-bottom: 4em;
+
+}
+
+.ourspeech>p {
+    margin-top: 0;
+}
+
+.ourspeech p {
+    font-size: 1.1em;
+}
+
+.intakeform {
+    margin-top: 3em;
+    text-align: center;
+}
+
+.intakeform a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    background-color: rgb(17, 138, 203);
+    padding: .3em 1.5em;
+    font-weight: 600;
+}
+
+.intakeform a:hover {
+    color: rgb(17, 138, 203);
+    background: white;
+    border: 1px solid rgb(134, 181, 206);
+}
+
+
+/* section 2 */
+
+
+#block2 {
+    background-color: rgb(244, 244, 244);
+    padding: 5em 0;
+    height: 60vh;
+
+}
+
+.cherries {
+    padding-left: 2em;
+    display: flex;
+}
+
+.cherries-content {
+    width: 50%;
+    margin-left: 3em;
+    /* float:left;
+    margin-left:2em; */
+}
+
+.cherries-content h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.cherries-content p {
+    font-size: 1.15em;
+}
+
+/* section 3 */
+
+
+#block3 {
+    padding: 5em 0 5em;
+    height: 60vh;
+}
+
+.training {
+    padding-left: 2em;
+    display: flex;
+}
+
+.training-content {
+    width: 50%;
+}
+
+.training-content h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.training-content p {
+    font-size: 1.15em;
+}
+
+.training img {
+    margin-left: 3em;
+}
+
+
+/* section 4 */
+
+
+#block4 {
+    background-color: rgb(244, 244, 244);
+    padding: 5em 0;
+    height: 60vh;
+
+}
+
+.catering {
+    padding-left: 2em;
+    display: flex;
+}
+
+.catering-content {
+    width: 50%;
+    margin-left: 3em;
+
+}
+
+.catering-content h2 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 800;
+}
+
+.catering-content p {
+    font-size: 1.15em;
+}
+
+/* footer */
+
+
+footer {
+    background-color: rgb(17, 138, 203);
+    width: 100%;
+    height: 60vh;
+    padding-bottom: 1em;
+}
+
+.link {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 1em 0 0 2em;
+}
+
+.link img {
+    margin: 1.5em 0 0 0;
+}
+
+.link h4 {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    font-family: "Angus-Regular", "Segoe UI", 'Roboto', "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+}
+
+.contact ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    /* add padding to arrang element list not to be at right side */
+    margin-top: -.8em;
+    width: 85%;
+}
+
+.contact li {
+    list-style-type: none;
+}
+
+.contact ul a {
+    color: white;
+    /* add to set instagram icon be white*/
+}
+
+.contact i {
+    font-size: large;
+    padding: .2em;
+}
+
+.contact ul i:hover {
+    background-color: white;
+    color: rgb(17, 138, 203);
+    border-radius: 5px;
+}
+
+.shop {
+    display: flex;
+    flex-direction: column;
+}
+
+.shop h4 {
+    margin-bottom: .5em;
+}
+
+.shop a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: .9em;
+    color: white;
+    font-weight: 700;
+    padding: .1em 0;
+    width: fit-content;
+}
+
+.shop a:hover {
+    border-bottom: solid 2px white;
+}
+
+.learn {
+    display: flex;
+    flex-direction: column;
+}
+
+.learn h4 {
+    margin-bottom: .5em;
+}
+
+.learn a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: .9em;
+    color: white;
+    font-weight: 700;
+    padding: .1em 0;
+    width: fit-content;
+
+
+}
+
+.learn a:hover {
+    border-bottom: solid 2px white;
+
+}
+
+.underfooter {
+    display: flex;
+    align-items: center;
+    padding: 0 2em;
+    width: 90%;
+    justify-content: space-between;
+    margin-top: .5em;
+}
+
+.copyright p {
+    color: white;
+    font-size: small;
+    font-weight: 700;
+    line-height: 1.5em;
+}
+
+.underfooter .signuptosubscribe input {
+    border: 1px solid white;
+    background-color: rgb(17, 138, 203);
+    height: 2.5em;
+    width: 404px;
+    height: 40px;
+    padding-left: 1em;
+    font-weight: bold;
+    color: white;
+
+}
+
+.signuptosubscribe input:focus {
+    box-shadow: -2px -2px rgb(113, 185, 224), 2px 2px rgb(113, 185, 224);
+    border: 1px solid white;
+    outline: none;
+}
+
+/* change placeholder color */
+::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgb(161, 209, 234);
+    font-size: 1.2em;
+    font-weight: 800;
+}
+
+
+.signuptosubscribe button {
+    background-color: white;
+    padding: 0.5em;
+    height: 44px;
+    border: white;
+    color: rgb(17, 138, 203);
+    font-weight: bold;
+}
+
+@media only screen and (max-width:500px) {
+    header {
+        width: 100%;
+        height: fit-content;
+        margin-bottom: 2em;
+    }
+
+    header .above {
+        width: 100%;
+        height: auto;
+    }
+
+    header .nav {
+        width: 100%;
+    }
+
+    .shopname h1 {
+        font-size: 2em;
+    }
+
+    .nav {
+        width: fit-content;
+
+    }
+
+    .nav .navbar {
+        display: none;
+    }
+
+    .orderonline {
+        display: none;
+    }
+
+    .dropdown {
+        display: inline-block;
+    }
+
+    .icon {
+        width: 50%;
+    }
+
+    .icon ul {
+        padding-left: 1em;
+        margin-top: 12px;
+    }
+
+    .searchicon i {
+        margin: 0 0.3em;
+    }
+
+    .mainpic {
+        height: 40vh;
+        background-size: cover;
+        background-position: -7.5em 0;
+    }
+
+    .mainpic .overlay {
+        display: none;
+    }
+
+    .ourspeech {
+        width: 95%;
+        margin-left: .8em;
+    }
+
+    .ourspeech p {
+        font-size: 1em;
+    }
+
+    #block2 {
+        height: fit-content;
+        padding: .5em 0;
+    }
+
+    .cherries {
+        flex-direction: column-reverse;
+        padding-left: 0;
+    }
+
+    .cherries-content {
+        width: 95%;
+        margin-left: .8em;
+
+    }
+
+    .cherries-content h2 {
+        font-size: 2em;
+    }
+
+    .cherries-content p {
+        font-size: 1em;
+    }
+
+    .cherries img {
+        width: 100%;
+        height: 50%;
+    }
+
+    #block3 {
+        height: fit-content;
+        padding: .5em 0;
+        background-color: rgb(244, 244, 244);
+        ;
+    }
+
+    .training {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .training-content {
+        width: 95%;
+        margin-left: .8em;
+    }
+
+    .training-content h2 {
+        font-size: 2em;
+    }
+
+    .training-content p {
+        font-size: 1em;
+    }
+
+    .training img {
+        margin-left: 0;
+        width: 100%;
+        height: 50%;
+    }
+
+    #block4 {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .catering {
+        flex-direction: column-reverse;
+        padding: 0;
+    }
+
+    .catering-content {
+        width: 95%;
+        margin: 0;
+        margin-left: .8em;
+    }
+
+    .catering-content h2 {
+        font-size: 2em;
+    }
+
+    .catering-content p {
+        font-size: 1em;
+    }
+
+    .catering img {
+        width: 100%;
+        height: 50%;
+    }
+
+    footer {
+        height: 135vh
+    }
+
+    .link {
+        flex-direction: column;
+        padding-left: 1em;
+    }
+
+    .contact ul {
+        width: 30%;
+    }
+
+    .link h4 {
+        font-size: .9em;
+    }
+
+    .shop a,
+    .learn a {
+        font-size: .8em;
+    }
+
+    .underfooter {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        padding-left: 1em;
+        padding-right: 0;
+        margin-top: 2em;
+    }
+
+    .signuptosubscribe {
+        width: 100%;
+    }
+
+    .signuptosubscribe form {
+        width: 100%;
+    }
+
+    .underfooter .signuptosubscribe input {
+        width: 65%;
+        height: 35px;
+    }
+
+    .signuptosubscribe button {
+        height: 39.5px;
+        width: 26%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .logo img {
+        width: 200px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:350px) {
+    .icon {
+        width: 45%;
+    }
+
+    .signuptosubscribe button {
+        font-size: small;
+    }
+
+    ::placeholder {
+        /* Most modern browsers support this now. */
+        font-size: 1em;
+        font-weight: 800;
+    }
+}
